@@ -22,6 +22,3 @@ class EmbeddingPipeline:
         embeddings = self.model.encode([chunk.page_content for chunk in chunks], show_progress_bar=True)
         print(f"[INFO]: {len(chunks)} chunks have been converted to {len(embeddings)} embeddings with shape {embeddings.shape}.")
         return embeddings
-
-
-    
